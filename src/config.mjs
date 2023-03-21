@@ -7,8 +7,8 @@ const CONFIG = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'サプリページ — サプリメント・栄養素・iHerb割引情報',
-  description: 'サプリガイド：栄養補助食品、栄養素、iHerb割引情報を提供',
+  title: 'サプリページ — サプリメント・ヘルスケア・iHerb割引情報',
+  description: 'サプリガイド・栄養補助食品・栄養素・ヘルスケア・美容・iHerb割引情報を提供',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"

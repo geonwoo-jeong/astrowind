@@ -138,6 +138,8 @@ export const getJapaneseTagName = (variable : string) => {
     case "mental-health": return "脳の記憶・不眠・うつ"
     case "vision": return "眼の健康"
     case "magnesium": return "マグネシウム"
+    case "news": return "ニュース"
+    case "sales": return "セール情報"
     default: return variable;
   }
 }

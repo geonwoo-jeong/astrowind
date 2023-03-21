@@ -1,10 +1,15 @@
-import { getPermalink, getBlogPermalink, getAsset, getTagPermaLink } from './utils/permalinks';
+import { getBlogPermalink, getAsset, getTagPermaLink } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
       text: 'サプリ',
+      href: getBlogPermalink(),
       links: [
+        {
+          text: '全て',
+          href: getBlogPermalink('multi-vitamin'),
+        },
         {
           text: 'マルチビタミン',
           href: getTagPermaLink('multi-vitamin'),
@@ -57,36 +62,11 @@ export const headerData = {
     },
     {
       text: 'ニュース',
-      links: [
-        {
-          text: 'Features',
-          href: '#',
-        },
-        {
-          text: 'Pricing',
-          href: '#',
-        },
-        {
-          text: 'About us',
-          href: '#',
-        },
-        {
-          text: 'Contact',
-          href: '#',
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
+      href: getTagPermaLink('news'),
     },
     {
       text: '割引情報',
-      href: getBlogPermalink(),
+      href: getTagPermaLink('sales'),
     }
   ],
 };
