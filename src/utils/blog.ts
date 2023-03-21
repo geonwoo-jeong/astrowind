@@ -122,3 +122,22 @@ export const findLatestPosts = async ({ count }: { count?: number }): Promise<Ar
 
   return posts ? posts.slice(0, _count) : [];
 };
+
+export const getJapaneseTagName = (variable : string) => {
+  switch(variable) {
+    case "multi-vitamin": return "マルチビタミン"
+    case "bore-health": return "マグネシウム・カルシウム・ビタミンD"
+    case "antioxidants": return "抗酸化物質"
+    case "circulation": return "血液循環・高血圧・高脂血症・浮腫"
+    case "digestion": return "胃・腸・消化・排便"
+    case "immunity": return "マグネシウム・カルシウム・ビタミンD"
+    case "nutrition": return "免疫力・鼻炎・アトピー・風邪"
+    case "feminine-cycle": return "女性生理・更年期"
+    case "joints": return "マグネシウム・カルシウム・ビタミンD"
+    case "metabolic": return "関節・軟骨・靭帯"
+    case "mental-health": return "脳の記憶・不眠・うつ"
+    case "vision": return "眼の健康"
+    case "magnesium": return "マグネシウム"
+    default: return variable;
+  }
+}

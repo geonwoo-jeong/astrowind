@@ -1,27 +1,26 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'AstroWind',
+  name: 'サプリ情報',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://sapuri.page',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
-  description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+  title: 'サプリページ — サプリメント・栄養素・iHerb割引情報',
+  description: 'サプリガイド：栄養補助食品、栄養素、iHerb割引情報を提供',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
-  language: 'en',
+  language: 'ja-jp',
   textDirection: 'ltr',
 
-  dateFormatter: new Intl.DateTimeFormat('en', {
+  dateFormatter: new Intl.DateTimeFormat('ja-jp', {
     year: 'numeric',
-    month: 'short',
+    month: 'narrow',
     day: 'numeric',
-    timeZone: 'UTC',
+    timeZone: 'Asia/Tokyo',
   }),
 
   googleAnalyticsId: false, // or "G-XXXXXXXXXX",
@@ -29,7 +28,7 @@ const CONFIG = {
 
   blog: {
     disabled: false,
-    postsPerPage: 4,
+    postsPerPage: 10,
 
     post: {
       permalink: '/%slug%', // Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%

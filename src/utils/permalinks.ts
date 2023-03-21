@@ -71,6 +71,9 @@ export const getHomePermalink = (): string => getPermalink('/');
 export const getBlogPermalink = (): string => getPermalink(BLOG_BASE);
 
 /** */
+export const getTagPermaLink = (slug: string): string => getPermalink(slug, 'tag');
+
+/** */
 export const getAsset = (path: string): string =>
   '/' +
   [BASE_PATHNAME, path]

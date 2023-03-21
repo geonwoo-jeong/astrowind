@@ -1,26 +1,62 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink, getAsset, getTagPermaLink } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
-      text: 'Landing',
+      text: 'サプリ',
       links: [
         {
-          text: 'Sass',
-          href: getPermalink('/landing/saas'),
+          text: 'マルチビタミン',
+          href: getTagPermaLink('multi-vitamin'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/landing/startup'),
+          text: '抗酸化物質',
+          href: getTagPermaLink('antioxidants'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/landing/mobile-app'),
+          text: 'マグネシウム・カルシウム・ビタミンD',
+          href: getTagPermaLink('bore-health'),
+        },
+        {
+          text: '血液循環・高血圧・高脂血症・浮腫',
+          href: getTagPermaLink('circulation'),
+        },
+        {
+          text: '胃・腸・消化・排便',
+          href: getTagPermaLink('digestion'),
+        },
+        {
+          text: '免疫力・鼻炎・アトピー・風邪',
+          href: getTagPermaLink('immunity'),
+        },
+        {
+          text: 'たんぱく質・アミノ酸・ハーブミックス',
+          href: getTagPermaLink('nutrition'),
+        },
+        {
+          text: '女性生理・更年期',
+          href: getTagPermaLink('feminine-cycle'),
+        },
+        {
+          text: '関節・軟骨・靭帯',
+          href: getTagPermaLink('joints'),
+        },
+        {
+          text: '肝臓・前立腺・糖尿病・貧血',
+          href: getTagPermaLink('metabolic'),
+        },
+        {
+          text: '脳の記憶・不眠・うつ',
+          href: getTagPermaLink('mental-health'),
+        },
+        {
+          text: '眼の健康',
+          href: getTagPermaLink('vision'),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: 'ニュース',
       links: [
         {
           text: 'Features',
@@ -49,79 +85,67 @@ export const headerData = {
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
-    },
-    {
-      text: 'Blog',
+      text: '割引情報',
       href: getBlogPermalink(),
-    },
-  ],
-  actions: [
-    { type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }
+    }
   ],
 };
   
 export const footerData = {
   links: [
-    {
-      title: 'Product',
-      links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
-      ],
-    },
-    {
-      title: 'Platform',
-      links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
-      ],
-    },
-    {
-      title: 'Support',
-      links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
-      ],
-    },
+    // {
+    //   title: 'サプリメント情報',
+    //   links: [
+    //     { text: 'マルチビタミン', href: '#' },
+    //     { text: '抗酸化物質', href: '#' },
+    //     { text: 'マグネシウム・カルシウム・ビタミンD', href: '#' },
+    //     { text: '血液循環・高血圧・高脂血症・浮腫', href: '#' },
+    //     { text: '胃・腸・消化・排便', href: '#' },
+    //     { text: '免疫力・鼻炎・アトピー・風邪', href: '#' },
+    //     { text: 'Resources', href: '#' },
+    //   ],
+    // },
+    // {
+    //   links: [
+    //     { text: 'Developer API', href: '#' },
+    //     { text: 'Partners', href: '#' },
+    //     { text: 'Atom', href: '#' },
+    //     { text: 'Electron', href: '#' },
+    //     { text: 'AstroWind Desktop', href: '#' },
+    //   ],
+    // },
+    // {
+    //   title: 'Support',
+    //   links: [
+    //     { text: 'Docs', href: '#' },
+    //     { text: 'Community Forum', href: '#' },
+    //     { text: 'Professional Services', href: '#' },
+    //     { text: 'Skills', href: '#' },
+    //     { text: 'Status', href: '#' },
+    //   ],
+    // },
+    // {
+    //   title: 'Company',
+    //   links: [
+    //     { text: 'About', href: '#' },
+    //     { text: 'Blog', href: '#' },
+    //     { text: 'Careers', href: '#' },
+    //     { text: 'Press', href: '#' },
+    //     { text: 'Inclusion', href: '#' },
+    //     { text: 'Social Impact', href: '#' },
+    //     { text: 'Shop', href: '#' },
+    //   ],
+    // },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    // { text: 'Terms', href: getPermalink('/terms') },
+    // { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
     { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
-  footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
-  `,
+  footNote: ``,
 };
