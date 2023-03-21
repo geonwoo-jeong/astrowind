@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://sapuri.page/sitemap-index.xml
