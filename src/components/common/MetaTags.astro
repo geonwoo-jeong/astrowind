@@ -28,7 +28,7 @@ const defaultImage = SITE.defaultImage
 
 const {
   title = SITE.name,
-  description = '',
+  description = 'サプリガイド・栄養補助食品・ヘルスケア・美容・iHerb割引情報を提供',
   image: _image = defaultImage,
 
   canonical = getCanonical(String(Astro.url.pathname)),
@@ -95,3 +95,4 @@ const image =
 <link rel="shortcut icon" href={getAsset('/favicon.ico')} />
 <link rel="icon" type="image/svg+xml" href={getAsset('/favicon.svg')} />
 <link rel="mask-icon" href={getAsset('/favicon.svg')} color="#8D46E7" />
+<link rel="sitemap" href="/sitemap-index.xml">
