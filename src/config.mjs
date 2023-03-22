@@ -23,8 +23,8 @@ const CONFIG = {
     timeZone: 'Asia/Tokyo',
   }),
 
-  googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
+  googleAnalyticsId: 'G-7REL94NSWY', // or "G-XXXXXXXXXX",
+  googleSiteVerificationId: '',
 
   blog: {
     disabled: false,
