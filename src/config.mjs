@@ -24,7 +24,7 @@ const CONFIG = {
   }),
 
   googleAnalyticsId: 'G-7REL94NSWY', // or "G-XXXXXXXXXX",
-  googleSiteVerificationId: '',
+  googleSiteVerificationId: false,
 
   blog: {
     disabled: false,
