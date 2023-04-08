@@ -3,13 +3,13 @@ import { getBlogPermalink, getAsset, getTagPermaLink } from './utils/permalinks'
 export const headerData = {
   links: [
     {
-      text: 'サプリ',
+      text: '情報',
       href: getBlogPermalink(),
       links: [
-        {
-          text: '全て',
-          href: getBlogPermalink('multi-vitamin'),
-        },
+        // {
+        //   text: '全て',
+        //   href: getBlogPermalink('multi-vitamin'),
+        // },
         // {
         //   text: 'マルチビタミン',
         //   href: getTagPermaLink('multi-vitamin'),
@@ -60,10 +60,10 @@ export const headerData = {
         },
       ],
     },
-    // {
-    //   text: 'ニュース',
-    //   href: getTagPermaLink('news'),
-    // },
+    {
+      text: 'レビュー',
+      href: getTagPermaLink('review'),
+    },
     // {
     //   text: '割引情報',
     //   href: getTagPermaLink('sales'),
