@@ -10,10 +10,10 @@ export const headerData = {
           text: '全て',
           href: getBlogPermalink('multi-vitamin'),
         },
-        {
-          text: 'マルチビタミン',
-          href: getTagPermaLink('multi-vitamin'),
-        },
+        // {
+        //   text: 'マルチビタミン',
+        //   href: getTagPermaLink('multi-vitamin'),
+        // },
         {
           text: '抗酸化物質',
           href: getTagPermaLink('antioxidants'),
@@ -22,10 +22,10 @@ export const headerData = {
           text: 'マグネシウム・カルシウム・ビタミンD',
           href: getTagPermaLink('bore-health'),
         },
-        {
-          text: '血液循環・高血圧・高脂血症・浮腫',
-          href: getTagPermaLink('circulation'),
-        },
+        // {
+        //   text: '血液循環・高血圧・高脂血症・浮腫',
+        //   href: getTagPermaLink('circulation'),
+        // },
         {
           text: '胃・腸・消化・排便',
           href: getTagPermaLink('digestion'),
@@ -34,40 +34,40 @@ export const headerData = {
           text: '免疫力・鼻炎・アトピー・風邪',
           href: getTagPermaLink('immunity'),
         },
-        {
-          text: 'たんぱく質・アミノ酸・ハーブミックス',
-          href: getTagPermaLink('nutrition'),
-        },
-        {
-          text: '女性生理・更年期',
-          href: getTagPermaLink('feminine-cycle'),
-        },
-        {
-          text: '関節・軟骨・靭帯',
-          href: getTagPermaLink('joints'),
-        },
-        {
-          text: '肝臓・前立腺・糖尿病・貧血',
-          href: getTagPermaLink('metabolic'),
-        },
-        {
-          text: '脳の記憶・不眠・うつ',
-          href: getTagPermaLink('mental-health'),
-        },
+        // {
+        //   text: 'たんぱく質・アミノ酸・ハーブミックス',
+        //   href: getTagPermaLink('nutrition'),
+        // },
+        // {
+        //   text: '女性生理・更年期',
+        //   href: getTagPermaLink('feminine-cycle'),
+        // },
+        // {
+        //   text: '関節・軟骨・靭帯',
+        //   href: getTagPermaLink('joints'),
+        // },
+        // {
+        //   text: '肝臓・前立腺・糖尿病・貧血',
+        //   href: getTagPermaLink('metabolic'),
+        // },
+        // {
+        //   text: '脳の記憶・不眠・うつ',
+        //   href: getTagPermaLink('mental-health'),
+        // },
         {
           text: '眼の健康',
-          href: getTagPermaLink('vision'),
+          href: getTagPermaLink('eye-care'),
         },
       ],
     },
-    {
-      text: 'ニュース',
-      href: getTagPermaLink('news'),
-    },
-    {
-      text: '割引情報',
-      href: getTagPermaLink('sales'),
-    }
+    // {
+    //   text: 'ニュース',
+    //   href: getTagPermaLink('news'),
+    // },
+    // {
+    //   text: '割引情報',
+    //   href: getTagPermaLink('sales'),
+    // }
   ],
 };
   
